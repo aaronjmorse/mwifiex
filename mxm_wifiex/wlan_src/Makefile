@@ -130,8 +130,8 @@ CONFIG_IMX_SUPPORT=y
 ifeq ($(CONFIG_IMX_SUPPORT),y)
 ccflags-y += -DIMX_SUPPORT
 endif
-#KERNELDIR ?= /nxp-imx8/kernel-source
-KERNELDIR ?= /usr/src/arm/linux_5_10_57_kernel/linux-nxp
+KERNELDIR ?= /nxp-imx8/kernel-source
+#KERNELDIR ?= /usr/src/arm/linux_5_10_57_kernel/linux-nxp
 CROSS_COMPILE ?= /opt/fsl-imx-internal-xwayland/5.10-gatesgarth/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-
 
 LD += -S
